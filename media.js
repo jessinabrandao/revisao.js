@@ -1,32 +1,21 @@
-const notas = [1, 2, 4]
+const notas = [1, 2, 4];
 
-
-function calculoMedia (){
-    let soma = 0
+function calculoMedia() {
+    let soma = 0;
     for (let i = 0; i < notas.length; i++) {
-        soma += notas[i]
+        soma += notas[i];
     }
-
-    const media = soma / notas.length
-    return media
-
+    const media = soma / notas.length;
+    return media;
 }
 
-if (calculoMedia < 5){
-    return console.log("Reprovado")
+const resultado = calculoMedia();
+console.log("Média: ${resultado}");
+
+if (resultado < 5) {
+    console.log("Reprovado");
+} else if (resultado >= 5 && resultado < 7) {
+    console.log("Recuperação");
+} else {
+    console.log("Aprovado");
 }
-
-else if(calculoMedia ===5 && calculoMedia < 7){
-    return console.log("Recuperação")
-}
-
-else{
-    return console.log("Aprovado")
-}
-
-const resultado = calculoMedia()
-console.log(resultado)
-
-
-
-

@@ -5,6 +5,6 @@ function calcularAno(anoNascimento, anoAtual){
     return anoAtual - anoNascimento
 }
 
-const idadePessoa = calcularAno()
+const idadePessoa = calcularAno(anoNascimento, anoAtual)
 console.log(idadePessoa)
 
